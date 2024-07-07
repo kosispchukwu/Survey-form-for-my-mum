@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>SURVEY FORM</h1>
+        <p>Please fill out this form with the required information</p>
+        <p class="bold">Note: answer using capital letters only</p>
+        <form method="post">
+            <fieldset>
+                <label for="first-name">Enter your first name:<input id="first-name" type="text" name="first-name" required /></label>
+                <label for="middle-name">Enter your middle name:<input id="middle-name" type="text" name="middle-name" /></label>
+                <label for="last-name">Enter your last name:<input id="last-name" type="text" placeholder="your surname" required /></label>
+                <label for="email">Enter your email:<input id="email" type="email" placeholder="example@gmail.com" name="email" required/></label>
+            </fieldset>
+            <fieldset>
+                <legend>What is your current location?</legend>
+                <label for="within-nigeria"><input id="within-nigeria" type="radio" name="location"checked class="inline">Within Nigeria
+                    <select id="geopolitical-zone" name="geopolitical-zone">
+                        <option value="">(choose your geopolitical zone)</option>
+                        <option value="1">North Central(Benue, Kogi, Kwara, Nasarawa, Niger, Plateau, Abuja)</option>
+                        <option value="2">North East(Adamawa, Bauchi, Borno, Gombe, Taraba, Yobe)</option>
+                        <option value="3">North West(Jigawa, Kaduna, Kano, Kastina, Kebbi, Sokoto, Zamfara)</option>
+                        <option value="4">South East(Abia, Anambra, Ebonyi, Enugu, Imo)</option>
+                        <option value="5">South South(Akwa Ibom, Bayelsa, Cross river, Delta, Edo, Rivers)</option>
+                        <option value="6">South West(Ekiti, Lagos, Ogun, Ondo, Osun, Oyo)</option>
+                    </select>
+                </label>
+                <label for="outside-nigeria"><input id="outside-nigeria" type="radio" name="location" class="inline">Outside Nigeria</label>
+            </fieldset>
+            <fieldset>
+                <label for="age">Input your age:<input id="age" type="number" min="18" max="100" name="age" required /></label>
+                <label for="bio">Provide a bio:<textarea id="bio" rols="5" cols="40" placeholder="your fav food, fav color, likes, dislikes, hobby ..." name="bio"></textarea></textarea></label>
+            </fieldset>
+            <input type="Submit" value="Submit" href="https://thank-you-message.vercel.app/">
+        </form>
+    </body>
+</html>
